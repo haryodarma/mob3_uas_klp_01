@@ -23,10 +23,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -50,19 +47,28 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAMs0RxpV56MVH7EickG2oYSWW6SpF2Vfk',
-    appId: '1:937403163876:web:3c7fd1c7dc142502def8f1',
-    messagingSenderId: '937403163876',
-    projectId: 'mob3-uas-klp-01',
-    authDomain: 'mob3-uas-klp-01.firebaseapp.com',
-    storageBucket: 'mob3-uas-klp-01.firebasestorage.app',
+    apiKey: 'AIzaSyAzurzDE9H3KpzIxcn9saq-NtHRxcqDKmQ',
+    appId: '1:971453665814:web:de7664095ac25f60e91b37',
+    messagingSenderId: '971453665814',
+    projectId: 'mob3-uas-klp-01-af5c1',
+    authDomain: 'mob3-uas-klp-01-af5c1.firebaseapp.com',
+    storageBucket: 'mob3-uas-klp-01-af5c1.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD6OuNFqH0Fp7hkVA8n6P3vD6oju4e_gSw',
-    appId: '1:937403163876:android:c2537358ac856e75def8f1',
-    messagingSenderId: '937403163876',
-    projectId: 'mob3-uas-klp-01',
-    storageBucket: 'mob3-uas-klp-01.firebasestorage.app',
+    apiKey: 'AIzaSyCU_Tz0nHSkHjfn41cMYEm40rwf3ZsJ-JU',
+    appId: '1:971453665814:android:7cc1bffdac8a9bf8e91b37',
+    messagingSenderId: '971453665814',
+    projectId: 'mob3-uas-klp-01-af5c1',
+    storageBucket: 'mob3-uas-klp-01-af5c1.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyAS8NFFyBL11863ZCkzh3t1xLuin0Jtd74',
+    appId: '1:971453665814:ios:c3d5c0fed50546f3e91b37',
+    messagingSenderId: '971453665814',
+    projectId: 'mob3-uas-klp-01-af5c1',
+    storageBucket: 'mob3-uas-klp-01-af5c1.firebasestorage.app',
+    iosBundleId: 'com.example.mob3UasKlp01',
   );
 }
